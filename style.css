@@ -1,0 +1,155 @@
+/*appelle de la bibliothèque de police google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/*déclaration du corps */
+body{
+    margin: 0;/*mettre une marge 'à l'extérieur' de 0*/
+    padding: 0;/*mettre une marge 'à l'intérieur' de 0*/
+    font-family: 'Montserrat',sans-serif;/*modifier la police du corps est 'Montserrat' et par défaut mettre sans serif*/
+}
+/*déclaration et modification de barre de navigation*/
+nav{
+    display: flex;/*alligner tous les éléments*/
+    flex-wrap:wrap;/*empiler les éléments dans le cas d'une autre résolution d'écran 'format mobile'*/
+    justify-content: center;/*centrer les éléments*/
+    align-items: center;/*alligner les éléments*/
+    border-bottom: 5px solid #6f6f6f;/*mettre une bordure pour distinguer notre barre de navigation de notre header*/
+}
+/*déclaration et styliser notre titre */
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', sans-serif;/*modifier la police d'écriture de notre texte*/
+    font-size: 30px;   /*modifier la taille d'écriture de notre texte*/
+}
+/*déclaration et modifier notre onglets principal */
+nav .onglets{
+    margin-top: 3px;/*mettre une marge en haut afin de mieux aligner les liens avec le titre*/
+    margin-left: 300px;/*mettre une marge extérieur à gauche afin de éloigner les liens avec le titre*/
+}
+/*déclaration et modifier nos lien de l'onglets */
+nav .onglets a{
+    text-decoration: none;/*enlever le solignement */
+    color: #000;/*modifier la couleur*/
+    margin-right: 10px;/*mettre un espacement entre chaque lien*/
+    border-bottom: 1px solid #000;/*mettre un solignement en doussous de chaque client*/
+    padding-bottom: 5px;/*espacer le soulignement */
+}
+/*déclaration et modifier notre header*/
+header{
+    display: flex;/*aligner tous les éléments*/
+    flex-direction: column;/*empiler tous les éléments en colonnes*/
+    align-items: center;/*centrer tous les éléments */
+    background: url('https://i.ibb.co/4d8CYtM/background-header.jpg');/*mettre une image d'arrière plan */
+    background-size: cover;/*modifier la taille de l'image et la mettre en cover*/
+    color: #fff;/*modifier la couleur du texte */
+    padding: 40px;/*mettre une marge intérieurs au niveau de tous les bordrs de nos éléments*/
+}
+/*modifier les propriétés qui se trouve au niveau du titre*/
+header h1{
+    font-family: 'Playfair Display', sans-serif;/*modifier la police d'écriture de notre titre*/
+    font-size: 50px;/*modifier la taille d'écriture de notre titre*/
+}
+
+/*modifier les propriétés qui se trouve au niveau du sous-titre*/
+header h4{
+    margin-top: -20px;/*réduire la marge extérieur en haut*/
+    font-size: 20px;/*modifier la taille du titre*/
+    text-align: center;/*centrer le titre*/
+    border-bottom: 1px solid #fff;/*souligner le titre*/
+}
+/*modifier les propriétés qui se trouve au niveau du bouton*/
+header button{
+    padding: 10px 20px;/*mettre une marge 'à l'intérieur' en haut et en bas de 10 pixels et une marge à l'intérieur à droite et à gauche de 20 pixels  */
+    background-color: #fff;/*modifier la couleur du background*/
+    color: #000;/*modifier la couleur du texte*/
+    border: none;/*enlever la bordure au niveau du bouton*/
+    font-size: 20px;/*modifier la taille d'écriture de notre texte*/
+    font-family: 'Playfair Display', sans-serif;/*modifier la police d'écriture de notre texte*/
+    outline: none;/*enlever l'effet d'entourage rouge qui s'affiche lorsqu'on clique sur le bouton*/ 
+    cursor: pointer;/*mettre un cursseur à pointeur pour povoir lorsque je place mon curseur au dessus du bouton il se modifie en un pointeur*/
+}
+/*déclarer la section principal*/
+.main{
+    margin-top:  40px;/*mettre un marge extérieure en haut afin d'espacer la section principal du header*/
+    display: flex;/*aligner tous les éléments*/
+    flex-direction: column;/*empiler tous les éléments en colonnes*/
+    align-items: center;/*centrer tous les éléments */
+}
+.main .content .card{
+    display: flex;/*aligner tous les éléments*/
+    flex-wrap: wrap;/*empiler les éléments dans le cas d'une autre résolution d'écran 'format mobile'*/ 
+    justify-content: center;/*centrer les éléments*/
+    margin-bottom: 20px;/*espacer les deux cartes */
+}
+.main .content .card .left{
+    flex: 0 0 30px;/*régler les flexs au nivau à droite et à gauche pour que l'image prend la plus grosse partie que le texte*/
+    padding: 20px;/*mettre une marge intérieur*/
+    background-color: black;/*modifier la couleur du background*/
+    color: #fff;/*modifier la couleur du texte*/
+}
+.main .content .card .right{
+    flex: 0 0 70px;
+}
+.main .content .card .right img{
+    height: 300px;/*modifier hauteur*/
+    width: 400px;/*modifier la largeur*/
+    margin-top: 5px;/*mettre un marge extérieure en haut afin d'espacer l'image du texte*/
+}
+ /*déclarer le footer 'pied de page'*/
+footer{
+    margin-top: 40px;/*mettre un marge extérieure en haut afin d'éloigner notre footer de nos cartes principals*/
+    border-top: 5px solid #6f6f6f;/*mettre une bordure pour distinguer notre footer de notre section principal*/
+    background-color: #000;/*modifier la couleur du background*/
+    color: #fff;/*modifier la couleur du texte*/
+    padding: 30px 100px;/*mettre une marge intérieur */
+
+}
+footer h1{
+    font-family: 'Playfair Display', sans-serif;/*modifier la police d'écriture de notre texte*/
+    border-bottom: 1px solid #fff;/*souligner le titre*/
+    width: 20%;/*rétrécir le soulignement*/
+    padding-bottom: 5px;/*espacer le soulignement */
+}
+footer .services{
+    margin-top: -10px;/*réduire la marge extérieur en haut*/
+    display: flex;/*aligner tous les éléments*/
+    flex-wrap: wrap;/*empiler les éléments dans le cas d'une autre résolution d'écran 'format mobile'*/ 
+}
+footer .services .service{
+    margin-right: 30px;/*mettre un espacement pour éloigner les éléments*/
+    padding: 10px;/*mettre une marge intérieur*/
+}
+footer .services .service p{
+    max-width: 300px;/*mettre une largeur max */
+}
+/*mettre un # aulieu d'un . car c'est un identifient non une classe*/
+footer #contact{
+    color: rgb(181, 181, 181);
+}
+/*pour également appliquer en format mobile pour cela il faut utiliser ce qu'on appelle les médias queries*/
+@media screen and (max-width: 780px) {
+    nav .onglets{
+        margin-left: 0px;/*annuler la marge dèja appliquer*/
+        margin-bottom: 20px;/*éloigner la bordure des liens*/
+    }
+    .main .card{
+        margin: 10px;/*mettre une marge 'à l'extérieur'*/
+    }
+    /*modifier notre image*/
+    .main .content .card .right img{
+        height: 200px;/*modifier la hauteur*/
+        width: 100%;/*modifier la largeur*/
+        margin-top: 0px;/*mettre une marge de 0 pour coller au niveau du texte*/
+    }
+    /*annuler la display flex pour placer correctement le texte en fonction de l'image*/
+    .main .content .card{
+        display: block;
+    }
+    /*modifier le footer*/
+    footer{
+        padding: 30px;/*diminuer la marge intérieur*/
+    }
+}

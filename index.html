@@ -1,0 +1,75 @@
+<!--création de la template qui ne s'affiche pas au client mais qui peut être instancié et affichié par la suite grâce à un script JavaScript -->
+<!DOCTYPE html><!--Tous les documents HTML doivent commencer par une <!DOCTYPE>déclaration. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--l'encodage UFT-8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adapter le site à une taille mobile-->
+    <title>Site Vitrine</title>
+    <link rel="stylesheet" href="style.css"><!--lier notre fichier pour pouvoir ensuite écrire du code css-->
+</head>
+<body>
+    <nav><!--création d'une barre de navigation -->
+        <h1>Burgure</h1><!--titre principale-->
+        <div class="onglets"><!--création d'une division qui sera mise en forme à l'aide de CSS-->
+            <!--stocker les onglets de notre barre de navigation en créant les liens suivants-->
+            <a href="">Homme</a>
+            <a href="#products">Nos produits</a><!--pointages vers url "aprés"-->
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <!--création du header-->
+    <header>
+        <h1>Burgure</h1><!--titre principale-->
+        <h4>LE MEILLIEUR RESTAURANT DE BURGUER.</h4><!--le sous-titre -->
+        <button>Parcourir</button><!--ajouter un bouton-->
+    </header>
+
+    <section class="main" id="products"> <!--appliquer un identifiant pour le lier avec le lien de la barre de navigation-->
+
+        <div class="content"><!--création d'une division pour mettre nos cartes-->
+
+            <div class="card"><!--création de la première carte-->
+                <div class="left"><!--contenu qui se trouve à gauche de notre carte-->
+                    <h1>Nos valeurs</h1><!--titre-->
+                    <p>Mangez sainement mais délicieusement. Nos clients sont rois, nos clients sont nos patrons.</p><!--petit paragraphe de discription -->
+                </div>
+
+                <div class="right"><!--contenu qui se trouve à droite de notre carte-->
+                    <img src="images/burger1.jpg" alt=""><!--affichier une image-->
+                </div> 
+            </div>
+
+            <div class="card"><!--création de la deuxième carte-->
+                <div class="left"><!--contenu qui se trouve à gauche de notre carte-->
+                    <h1>Nos recettes</h1><!--titre-->
+                    <p>Nous mettons à votre disposition les recettes de nos burgers les plus délicieux !</p><!--petit paragraphe de discription -->
+                </div>
+                
+                <div class="right"><!--contenu qui se trouve à droite de notre carte-->
+                    <img src="images/burger2.jpg" alt=""><!--affichier une image-->
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!--création d'un footer -->
+    <footer>
+        <h1>Nos services</h1><!--titre-->
+        <div class="services">
+            <div class="service">
+                <h3>Livraison gratuite</h3><!--sous-titre-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
+            </div>
+            <div class="service">
+                <h3>Paiement en ligne</h3><!--sous-titre-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
+            </div>
+            <div class="service">
+                <h3>AImé ou remboursé</h3><!--sous-titre-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
+            </div>
+        </div>
+        <p id="contact">Contact : 08 19 17 278 1 | &copy; 2021, Burgure.</p><!--texte de contact-->
+    </footer>
+</body>
+</html>
